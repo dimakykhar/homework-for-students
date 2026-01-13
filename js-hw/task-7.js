@@ -12,4 +12,12 @@ function subtract(x, y) {
     return x - y;
 }
 
+// Функція вищого порядку
+function calculate(a, b, operation) {
+    return operation(a, b);
+}
+
+// Використання:
+console.log(calculate(10, 5, add));      // 15
+console.log(calculate(10, 5, subtract)); // 5
 

@@ -4,7 +4,14 @@
     Створити для нього інтерфейс User та призначити його тип об'єкту user.
 */
 
-const user = {
+// 1. Створюємо інтерфейс
+interface User {
+    name: string;
+    age: number;
+}
+
+// 2. Призначаємо тип об'єкту
+const user: User = {
     name: "Іван",
     age: 25
 };

@@ -14,3 +14,9 @@ interface Product {
     price: number;
     description: string;
 }
+
+// a) Створюємо тип ProductPreview, вибираючи лише title та price
+type ProductPreview = Pick<Product, "title" | "price">;
+
+// b) Створюємо тип ProductWithoutDescription, видаляючи description
+type ProductWithoutDescription = Omit<Product, "description">;
